@@ -1,0 +1,26 @@
+.nav-tabs > li > a {
+    color: white;
+}
+
+.nav-item.plus-right{
+    float: right;
+}
+
+.list-group{
+    background-color: #292b2c;
+}
+
+.list-group-item{
+    margin: 10px;
+    background-color: dimgrey;
+    color: white;
+}
+
+.nav-item.pill-1{
+    margin: 10px;
+    background-color: dimgrey;
+}
+
+.nav-item.plus-1{
+    margin: 10px;
+}
