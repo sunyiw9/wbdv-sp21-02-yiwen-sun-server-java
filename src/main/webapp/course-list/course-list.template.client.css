@@ -1,0 +1,39 @@
+.wbdv-sticky-nav-bar{
+    background-color: lightblue;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+}
+
+.container{
+    padding-top: 70px;
+}
+
+a{
+    color: black;
+}
+
+.fa-file-alt{
+    color: #2c75ff;
+}
+
+.row.ys-row-course{
+    border-style: solid;
+    border-width: thin;
+    border-color: #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.ys-plus{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
+
+.ys-times{
+    position: absolute;
+    right: 100px;
+}
