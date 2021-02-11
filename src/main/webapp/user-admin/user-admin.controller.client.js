@@ -115,13 +115,11 @@ function main(){
     $updateBtn.click(function(){
         if(updateUser() === true){
             clearForm()
-            console.log("SUN is big SB")
         }
     })
     $createBtn.click(function () {
         if (createUser() === true) {
             clearForm()
-            console.log("SUN is big SB")
         }
     })
 
