@@ -36,7 +36,9 @@ function createUser(){
         .then(function (actualUser){
             users.push(newUser)
             renderUsers(users)
+
         })
+    return true
 }
 
 var selectedUser = null
@@ -62,7 +64,17 @@ function updateUser(){
             users[index] = selectedUser
             renderUsers(users)
         })
+    return true
 }
+
+function clearForm(){
+    document.getElementById('usernameFld').value=''
+    document.getElementById('passwordFld').value=''
+    document.getElementById('firstNameFld').value=''
+    document.getElementById('lastNameFld').value=''
+    document.getElementById('roleFld').value='FACULTY'
+}
+
 
 function renderUsers(users) {
     $tableRows.empty()
@@ -100,8 +112,20 @@ function main(){
     $lastNameFld = $(".wbdv-lastname-fld")
     $roleFld = $(".wbdv-role-fld")
 
-    $updateBtn.click(updateUser)
-    $createBtn.click(createUser)
+    $updateBtn.click(function(){
+        if(updateUser() === true){
+            clearForm()
+            console.log("SUN is big SB")
+        }
+    })
+    $createBtn.click(function () {
+        if (createUser() === true) {
+            clearForm()
+            console.log("SUN is big SB")
+        }
+    })
+
+
     userService.findAllUsers().then(function(actualUsers){
         users = actualUsers
         renderUsers(users)

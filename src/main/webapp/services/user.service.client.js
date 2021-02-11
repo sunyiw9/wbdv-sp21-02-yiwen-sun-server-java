@@ -17,14 +17,17 @@ function AdminUserServiceClient() {
             return response.json()
         })
     }
+
     function findAllUsers() {
         return fetch(self.url).then(function(response){
             return response.json()
         })
     }
+
     function findUserById(userId) {
 
     }
+
     function updateUser(userId, user) {
         return fetch(`${self.url}/${userId}`, {
             method: 'PUT',
